@@ -1,0 +1,29 @@
+/*******************
+********************
+    Basic Styles
+********************
+********************/
+/* @import 'normalize.css' */
+/*******************
+********************
+    Layouts Styles
+********************
+********************/
+
+/*******************
+********************
+    Modules Styles
+********************
+********************/
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(25, 25, 25, 0.5)),
+    url("https://images.unsplash.com/photo-1597334948330-38795f25d05d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1651&q=80");
+  height: 50vh;
+  background-size: cover;
+}
+
+/*******************
+********************
+    Themes Styles
+********************
+********************/
