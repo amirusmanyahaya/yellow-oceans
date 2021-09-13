@@ -1,13 +1,13 @@
 #carousel .carousel-item.boat {
-  background-image: url("images/containers.jpg");
+  background-image: url("/images/containers.jpg");
 }
 
 #carousel .carousel-item.sea {
-  background-image: url("images/container2.jpg");
+  background-image: url("/images/container2.jpg");
 }
 
 #carousel .carousel-item.river {
-  background-image: url("images/container3.jpg");
+  background-image: url("/images/container3.jpg");
 }
 
 #carousel .carousel-item {
