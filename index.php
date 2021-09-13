@@ -9,47 +9,153 @@
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link rel="stylesheet" type="text/css" href="/styles/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Home Page</title>
   </head>
   <body>
     <main>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">YellowOcean</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a href="#" class="navbar-brand">Yellow Oceans</a>
+        <div class="navbar-header">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapseNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="collapseNavbar"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a href="#" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a href="#" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Products</a>
             </li>
           </ul>
         </div>
       </nav>
-      <section class="jumbotron jumbotrun-fluid hero">
-        
-      </section>
+      <div
+        id="carousel"
+        class="carousel slide hero-slides"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel" data-slide-to="0"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active boat">
+            <div class="container h-100 d-none d-md-block">
+              <div class="row align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                  <div class="caption animated fadeIn">
+                    <h2 class="animated fadeInLeft">Boat Excursions</h2>
+                    <p class="animated fadeInRight">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Cras tristique nisl vitae luctus sollicitudin. Fusce
+                      consectetur sem eget dui tristique, ac posuere arcu
+                      varius.
+                    </p>
+                    <a class="animated fadeInUp btn delicious-btn" href="#"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item sea">
+            <div class="container h-100 d-none d-md-block">
+              <div class="row align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                  <div class="caption animated fadeIn">
+                    <h2 class="animated fadeInLeft">
+                      Discover the canyon by the sea
+                    </h2>
+                    <p class="animated fadeInRight">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Cras tristique nisl vitae luctus sollicitudin. Fusce
+                      consectetur sem eget dui tristique, ac posuere arcu
+                      varius.
+                    </p>
+                    <a class="animated fadeInUp btn delicious-btn" href="#"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item river">
+            <div class="container h-100 d-none d-md-block">
+              <div class="row align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                  <div class="caption animated fadeIn">
+                    <h2 class="animated fadeInLeft">
+                      Explore the river valley
+                    </h2>
+                    <p class="animated fadeInRight">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Cras tristique nisl vitae luctus sollicitudin. Fusce
+                      consectetur sem eget dui tristique, ac posuere arcu
+                      varius.
+                    </p>
+                    <a class="animated fadeInUp btn delicious-btn" href="#"
+                      >Learn more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </main>
     <footer></footer>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+    crossorigin="anonymous"
+  ></script>
 </html>
