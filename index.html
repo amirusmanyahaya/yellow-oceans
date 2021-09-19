@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <main>
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Yellow Oceans</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <header>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active"
+              style="background-image: url('./images/containers.jpg')"
+            >
+              <div class="carousel-caption">
+                <h5>Water Shipment</h5>
+                <p>
+                  At, Yellow Oceans, we help you ship your containers anywhere
+                  in the world by sea.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url('./images/Loading-container-in-cargo-airplane.jpg');
+              "
+            >
+              <div class="carousel-caption">
+                <h5>Air Shipment</h5>
+                <p>
+                  Want to get your items as fast as possible? We can ship your
+                  items by air.
+                </p>
+              </div>
+            </div>
+            <div
+              class="carousel-item"
+              style="
+                background-image: url('./images/bernd-dittrich-0vAAngcguI0-unsplash.jpg');
+              "
+            >
+              <div class="carousel-caption">
+                <h5>Land Shipment</h5>
+                <p>
+                  Want your items to be shipped to your desired location. Our
+                  road and rail shipment has you covered.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Page Content -->
+      <section class="py-5">
+        <div class="container">
+          <h1 class="fw-light text-center">Our Staff</h1>
+          <div class="row d-flex justify-content-around mt-5">
+            <div class="col-md-3 col-sm-5">
+              <div class="image-container">
+                <img
+                  src="./images/Kawu_Abba.jpg"
+                  alt="CEO"
+                  class="img-fluid"
+                  id="member-1"
+                />
+              </div>
+              <h5 class="fw-light text-center">Ahmad Adamu Kurawa</h5>
+              <h6 class="fw-light text-center">CEO</h6>
+            </div>
+            <div class="col-md-3 col-sm-5">
+              <div class="image-container">
+                <img
+                  src="./images/Jackey_kong.jpg"
+                  alt="jakey"
+                  class="img-fluid"
+                  id="member-2"
+                />
+              </div>
+              <h5 class="fw-light text-center mt-1">Jackey Kong</h5>
+              <h6 class="fw-light text-center">CEO</h6>
+            </div>
+            <div class="col-md-3 col-sm-5">
+              <div class="image-container">
+                <img
+                  src="./images/lincoln_huang.jpg"
+                  alt="lincoln"
+                  class="img-fluid"
+                  id="member-3"
+                />
+              </div>
+              <h5 class="fw-light text-center mt-1">Lincoln Huang</h5>
+              <h6 class="fw-light text-center">CEO</h6>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
